@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="heading"><div class="head"><H1>Welcome To Calulator!</H1></div>
+    <div class="main_box"><!-- Main Box -->
+        <div class="calulator_box"><!-- Calaulator Box -->
+            <div><!-- Calaulator Box Child -->
+                <input type="text"  id="textBox" readonly><!-- Text Display -->
+                <div class="box1"><!-- First Box For Four Button -->
+                    <button class="button" type="text"  onclick="
+                    currentValue= '';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">C</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '00';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">00</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '/';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">/</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '%';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">%</button>
+                </div>
+                <div class="box2"><!-- Second Box For Four Button -->
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '9';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">9</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '8';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">8</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '7';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">7</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '+';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">+</button>
+                </div>
+                <div class="box3"><!-- Third Box For Four Button -->
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '6';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">6</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '5';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">5</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '4';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">4</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '-';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">-</button>
+                </div>
+                <div class="box4"><!-- Fourth Box For Four Button -->
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '3';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">3</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '2';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">2</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '1';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">1</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '*';
+                    document.querySelector('#textBox').value= currentValue;
+                    ">*</button>
+                </div>
+                <div class="box5"><!-- Fifth Box For three Button -->
+                    <button class="button" type="text"onclick="
+                    currentValue=currentValue + '0';
+                    document.querySelector('#textBox').value= currentValue;
+                        ">0</button>
+                    <button class="button" type="text"  onclick="
+                    currentValue=currentValue + '.';
+                    document.querySelector('#textBox').value= currentValue;">.</button>
+                    <button class="totel" type="text"  onclick="
+                    currentValue= eval(currentValue) ;
+                    document.querySelector('#textBox').value= currentValue;
+                    ">=</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script ><!-- Javascript -->
+       currentValue= '';
+       document.querySelector('#textBox').value= currentValue;
+
+    </script>
+</body>
+</html>
